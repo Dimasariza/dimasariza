@@ -1,7 +1,7 @@
 <template>
     <button 
     class="text-white !fixed rounded-lg bg-primary bottom-4 right-4"
-    @click="scrollToSection('#hero')"
+    @click="scrollToSection('#navbar')"
     >
         <ArrowUpIcon class="size-10 text-white-500 m-1"/> 
     </button>
@@ -13,7 +13,7 @@
     const scrollToSection = (href: string) => {
         const section = document.querySelector(href)
         if(section) {
-            section.scrollIntoView({ behaviour: 'smooth' })
+            section.scrollIntoView({behavior :'smooth'})
         }
     }
 </script>
