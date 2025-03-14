@@ -1,8 +1,8 @@
 <script setup lang="ts">
   import { defineAsyncComponent } from 'vue'
   const HeroSection = defineAsyncComponent(() => import('@components/HeroSection'))
-  const NavBar = defineAsyncComponent(() => import('@/components/NavBar'))
-  const ServicesSection = defineAsyncComponent(() => import('./components/ServicesSection'))
+  const NavBar = defineAsyncComponent(() => import('@/components/NavBar.vue'))
+  const ServicesSection = defineAsyncComponent(() => import('./components/ServicesSection.vue'))
   const AboutSection = defineAsyncComponent(() => import('./components/AboutSection'))
   const ExperienceAndSkills = defineAsyncComponent(() => import('./components/ExperienceAndSkills'))
   const LatestProject = defineAsyncComponent(() => import('./components/LatestProject'))
