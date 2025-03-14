@@ -7,7 +7,6 @@ export default defineConfig({
   plugins: [
     vue(),
   ],
-  base: "/my_portfolio",
   resolve: {
     alias: {
       "@components": path.resolve(__dirname, 'src/components'),
