@@ -24,10 +24,10 @@
         <nav :class="['fixed inset-0 z-20 flex flex-col items-center justify-center bg-regal-blue md:relative md:bg-transparent md:flex md:justify-between md:flex-row', isMenuOpen ? 'block' : 'hidden']">
             <ul class="flex flex-col items-center space-y-5 md:flex-row md:space-x-5 md:space-y-0">
                 <li v-for="item in Menu" :key="item.name">
-                    <button :href="item.href"
+                    <button :href="item?.href"
                         class="block text-white transition hover:text-primary ease-liner text-2xl md:text-lg"
-                        @click="scrollToSection(item.href)"
-                        >{{ item.name }}
+                        @click="scrollToSection(item?.href)"
+                        >{{ item?.name }}
                     </button>
                 </li>
             </ul>
@@ -38,7 +38,7 @@
 <script setup lang="ts">
     import {ref} from 'vue'
     
-    const Menu = ref<HTMLDivElement | null>([
+    const Menu = ref([
         { name: 'Services', href: '#services'},
         { name: 'About Me', href: '#about'},
         { name: 'Skills', href: '#skills'},
