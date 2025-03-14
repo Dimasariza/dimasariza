@@ -11,7 +11,7 @@
         "./src" // set path `@/*` as alias of `src/*`,
       ],
       "@components/*": [
-        "src/components/*" // set path `@components/*` as alias of `src/components/*`,
+        "./src/components/*" // set path `@components/*` as alias of `src/components/*`,
       ]
     }
     /* other configs */
