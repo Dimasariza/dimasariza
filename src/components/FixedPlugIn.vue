@@ -9,9 +9,8 @@
 
 <script setup lang="ts">
     import { ArrowUpIcon } from '@heroicons/vue/24/solid'
-    import { ref } from 'vue'
 
-    const scrollToSection = (href) => {
+    const scrollToSection = (href: string) => {
         const section = document.querySelector(href)
         if(section) {
             section.scrollIntoView({ behaviour: 'smooth' })

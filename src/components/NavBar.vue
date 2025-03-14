@@ -46,8 +46,8 @@
         { name: 'Contact', href: '#contact'},
     ])
 
-    const isMenuOpen = ref(false)
-    const scrollToSection = (href) => {
+    const isMenuOpen: boolean = ref(false)
+    const scrollToSection = (href: string) => {
         isMenuOpen = false
         const section = document.querySelector(href)
         if(section) {

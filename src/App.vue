@@ -11,7 +11,6 @@
   const Footer = defineAsyncComponent(() => import('@/components/Footer.vue'))
   const FixedPlugIn = defineAsyncComponent(() => import('@/components/FixedPlugIn.vue'))
   import loadingSpinner from '@/components/loadingScreen.vue'
-  import toastr from '@/components/Toastr.vue'
 </script>
 
 <template>
