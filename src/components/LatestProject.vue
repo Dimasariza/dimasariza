@@ -62,7 +62,7 @@ import { ref, computed } from 'vue';
 const Projects = ref([
 {
         category: 'Game Development',  
-        image: 'src/assets/projects/game_dev.png',
+        image: new URL(`@assets/projects/game_dev.png`, import.meta.url),
         title: 'Ship Simulator Development',
         description: 'I developed a ship simulator game in Unity designed to provide hands-on training in nautical navigation for students. This simulator offers a realistic and immersive experience, helping users develop essential maritime skills in a controlled environment. It enhances learning by simulating real-world navigation scenarios with accurate physics and interactive controls.',
         technologies: ['unity', 'blender', 'C#'],
@@ -71,7 +71,7 @@ const Projects = ref([
     },
     {
         category: 'Web Development',
-        image: 'src/assets/projects/RiskGuardian.png',
+        image: new URL(`@assets/projects/RiskGuardian.png`, import.meta.url),
         title: 'Assets Risk Inspection',
         description: 'This application was developed to ensure the quality and reliability of industrial assets, including pipes, tanks, relief devices, valves, and more. It helps industries assess asset feasibility based on American Petroleum Institute (API) standards, ensuring compliance, safety, and efficiency.',
         technologies: ['next.js', 'tailwind', 'laravel'],
@@ -80,7 +80,7 @@ const Projects = ref([
     },
     {
         category: 'Web Development',
-        image: 'src/assets/projects/AIG.png',
+        image: new URL(`@assets/projects/AIG.png`, import.meta.url),
         title: 'Company Profile',
         description: 'I developed a company profile website, ensuring it was visually appealing, easy to navigate, and effective for business promotion. By bringing the startup online, I helped it connect with more companies and grow its brand recognition.',
         technologies: ['next.js', 'tailwind', 'react.js'],
@@ -89,7 +89,7 @@ const Projects = ref([
     },
     {
         category: 'Web Development',
-        image: 'src/assets/projects/ais_anothership.png',
+        image: new URL(`@assets/projects/ais_anothership.png`, import.meta.url),
         title: 'AIS Monitoring',
         description: 'I developed an AIS Monitoring app designed to provide real-time ocean and vessel information around the main ship. This system enhances maritime safety by tracking nearby ships, displaying navigation data, and improving situational awareness. It helps users make informed decisions for safer and more efficient voyages.',
         technologies: ['react.js', 'bootstrap', 'leaflet'],
@@ -98,7 +98,7 @@ const Projects = ref([
     },
     {
         category: 'Web Development',
-        image: 'src/assets/projects/docking_home.png',
+        image: new URL(`@assets/projects/docking_home.png`, import.meta.url),
         title: 'Pupuk Indonesia Logistik Docking Management',
         description: 'A web-based application designed to manage docking schedules and budgets efficiently. This system helps optimize resource allocation, track project timelines, and streamline operations in the harbor. By improving planning and decision-making, it enhances operational efficiency and ensures smoother docking processes.',
         technologies: ['angular.js', 'nebular', 'bootstrap'],
@@ -107,7 +107,7 @@ const Projects = ref([
     },
     {
         category: 'Game Development',
-        image: 'src/assets/projects/pmsol_ME.png',
+        image: new URL(`@assets/projects/pmsol_ME.png`, import.meta.url),
         title: 'Auto Monitoring System',
         description: 'This application provides real-time tracking of vital ship data, including engine RPM, temperature, oil pressure, ship alarms, and fuel levels. Designed to enhance maritime safety and operational efficiency, the system ensures accurate monitoring, helping crews make informed decisions for a smoother and safer voyage',
         technologies: ['react.js', 'electron', 'bootstrap'],

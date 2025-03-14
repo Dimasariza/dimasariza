@@ -12,6 +12,9 @@
       ],
       "@components/*": [
         "./src/components/*" // set path `@components/*` as alias of `src/components/*`,
+      ],
+      "@assets/*": [
+        "./src/assets/*" // set path `@assets/*` as alias of `src/assets/*`,
       ]
     }
     /* other configs */
