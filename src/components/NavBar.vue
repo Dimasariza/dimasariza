@@ -47,9 +47,9 @@
         { name: 'Contact', href: '#contact'},
     ])
 
-    let isMenuOpen = ref(false)
+    const isMenuOpen = ref(false)
     const scrollToSection = (href: string) => {
-        isMenuOpen = false
+        isMenuOpen.value = false
         const section = document.querySelector(href)
         if(section) {
             section.scrollIntoView({behavior :'smooth'})

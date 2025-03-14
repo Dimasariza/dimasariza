@@ -104,7 +104,7 @@
 
 <script setup>
     import { ref } from 'vue'
-    import Toast from '@/components/Toastr.vue'
+    import Toast from './Toastr.vue'
     import axios from 'axios'
 
     const toast = ref(null)

@@ -1,16 +1,16 @@
 <script setup lang="ts">
   import { defineAsyncComponent } from 'vue'
-  const HeroSection = defineAsyncComponent(() => import('@/components/HeroSection.vue'))
-  const NavBar = defineAsyncComponent(() => import('@/components/NavBar.vue'))
-  const ServicesSection = defineAsyncComponent(() => import('@/components/ServicesSection.vue'))
-  const AboutSection = defineAsyncComponent(() => import('@/components/AboutSection.vue'))
-  const ExperienceAndSkills = defineAsyncComponent(() => import('@/components/ExperienceAndSkills.vue'))
-  const LatestProject = defineAsyncComponent(() => import('@/components/LatestProject.vue'))
-  const ContactSection = defineAsyncComponent(() => import('@/components/ContactSection.vue'))
-  const TestimonialSection = defineAsyncComponent(() => import('@/components/TestimonialSection.vue'))
-  const Footer = defineAsyncComponent(() => import('@/components/Footer.vue'))
-  const FixedPlugIn = defineAsyncComponent(() => import('@/components/FixedPlugIn.vue'))
-  import loadingSpinner from '@/components/loadingScreen.vue'
+  const HeroSection = defineAsyncComponent(() => import('@components/HeroSection'))
+  const NavBar = defineAsyncComponent(() => import('./components/NavBar'))
+  const ServicesSection = defineAsyncComponent(() => import('./components/ServicesSection'))
+  const AboutSection = defineAsyncComponent(() => import('./components/AboutSection'))
+  const ExperienceAndSkills = defineAsyncComponent(() => import('./components/ExperienceAndSkills'))
+  const LatestProject = defineAsyncComponent(() => import('./components/LatestProject'))
+  const ContactSection = defineAsyncComponent(() => import('./components/ContactSection'))
+  const TestimonialSection = defineAsyncComponent(() => import('./components/TestimonialSection'))
+  const Footer = defineAsyncComponent(() => import('./components/Footer'))
+  const FixedPlugIn = defineAsyncComponent(() => import('./components/FixedPlugIn'))
+  import loadingSpinner from './components/loadingScreen'
 </script>
 
 <template>
